@@ -9,7 +9,7 @@ public class MyGUILayout : MonoBehaviour
 
     void OnGUI()
     {
-        // Кнопки с авто размером и положением
+        // Кнопки с авто размером и положением. Автоматически создались в левом верхнем экране
         GUILayout.Button("Automatic Layout Button");      
         
         GUILayout.Button("I am not inside an Area");
@@ -32,7 +32,9 @@ public class MyGUILayout : MonoBehaviour
        
         GUILayout.EndVertical();  // Конец столбцового заполнения
 
-        GUILayout.BeginVertical();  // Начало столбцового заполнения
+        // Начало столбцового заполнения. Отобразится рядом с предыдущим столбиком, т.к. в одной строке
+        GUILayout.BeginVertical();  
+
         GUILayout.Label("Some slider: ");
         sliderValue = GUILayout.HorizontalSlider(sliderValue, 0.0f, 10.0f);
         GUILayout.EndVertical();  // Конец столбцового заполнения

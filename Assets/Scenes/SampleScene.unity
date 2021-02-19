@@ -132,6 +132,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 349045934}
+  - component: {fileID: 349045935}
+  - component: {fileID: 349045938}
+  - component: {fileID: 349045937}
+  - component: {fileID: 349045936}
   m_Layer: 0
   m_Name: GUI
   m_TagString: Untagged
@@ -153,6 +157,59 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &349045935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349045933}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6ccf25fe21ddde4f9630ba423351950, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &349045936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349045933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02f2eb9d4e5a78743af1dd8793c3ced7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myColor: {r: 0, g: 0, b: 0, a: 0}
+  GO: {fileID: 0}
+  mySkin: {fileID: 0}
+--- !u!114 &349045937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349045933}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6852eba67acc871429b25b92ee8df23e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &349045938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349045933}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07fb8d8d4fdee90448caaec74102a93d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _icon: {fileID: 2800000, guid: 0b5345cf23ab840779a8cbf1b89f355a, type: 3}
+  on: 1
 --- !u!1 &516856421
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,6 +488,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1554417729}
   - component: {fileID: 1554417728}
+  - component: {fileID: 1554417730}
   m_Layer: 0
   m_Name: Water4AdvancedReflectionSceneCamera
   m_TagString: Untagged
@@ -495,6 +553,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!45 &1554417730
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554417727}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1570560945
 GameObject:
   m_ObjectHideFlags: 0
@@ -639,7 +706,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1649389095}
   m_LocalRotation: {x: -0.13075079, y: -0.2795259, z: -0.03878682, w: 0.9504026}
-  m_LocalPosition: {x: 590.20825, y: -17.426651, z: 79.68402}
+  m_LocalPosition: {x: 617.20776, y: -3.074646, z: 42.278717}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
