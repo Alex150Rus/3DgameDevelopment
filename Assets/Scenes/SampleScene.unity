@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1.03
   m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: cdbb40e11399e4a17882ada20a1b896a, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: bf1bf92a3ce592e40b898be6c21cc2fa, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -177,7 +177,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 349045933}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02f2eb9d4e5a78743af1dd8793c3ced7, type: 3}
   m_Name: 
@@ -218,7 +218,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 349045933}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c1b001774ba35740b8efaa4c2beb296, type: 3}
   m_Name: 
@@ -328,6 +328,22 @@ PrefabInstance:
       propertyPath: m_Volume
       value: 0.26
       objectReference: {fileID: 0}
+    - target: {fileID: 5332414231891414444, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99577296
+      objectReference: {fileID: 0}
+    - target: {fileID: 5332414231891414444, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.0918492
+      objectReference: {fileID: 0}
+    - target: {fileID: 5332414231891414444, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 10.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 8415633904698384598, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: m_Intensity
+      value: 81.45
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
 --- !u!1 &705507993
@@ -340,6 +356,7 @@ GameObject:
   m_Component:
   - component: {fileID: 705507995}
   - component: {fileID: 705507994}
+  - component: {fileID: 705507996}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -363,7 +380,7 @@ Light:
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
+  m_CookieSize: 0
   m_Shadows:
     m_Type: 2
     m_Resolution: -1
@@ -423,6 +440,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &705507996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705507993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80b975bade198994cbe8ea3bab813bcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sky: {r: 0.50462794, g: 0.60130787, b: 0.7924528, a: 0}
+  Equator: {r: 0, g: 0.79215693, b: 1, a: 0}
+  Ground: {r: 0.07450981, g: 1, b: 0, a: 0}
+  SunColor: {r: 0.89019614, g: 0.96470594, b: 0.227451, a: 0}
+  RotateSpeed: 0.08
 --- !u!1001 &725335982
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -662,6 +696,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1649389097}
   - component: {fileID: 1649389096}
+  - component: {fileID: 1649389098}
   m_Layer: 0
   m_Name: Water4AdvancedReflectionFirstPersonCharacter
   m_TagString: Untagged
@@ -719,10 +754,19 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1649389095}
-  m_LocalRotation: {x: -0.13075079, y: -0.2795259, z: -0.03878682, w: 0.9504026}
-  m_LocalPosition: {x: 617.20776, y: -3.074646, z: 42.278717}
+  m_LocalRotation: {x: -0.20365873, y: 0.15897179, z: 0.033548944, w: 0.96546656}
+  m_LocalPosition: {x: 594.97577, y: -17.984238, z: 18.878542}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!45 &1649389098
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649389095}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
