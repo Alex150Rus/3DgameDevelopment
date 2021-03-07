@@ -17,10 +17,20 @@ public class IKAnimation : MonoBehaviour
     [SerializeField] private float rightHandWeight = 1;
     [SerializeField] private bool ikActive;
 
+    [SerializeField] private float weightLeftFoot;
+    [SerializeField] private float weightRightFoot;
+
+    private Vector3 rightfootPos;
+    private int rightHash;
+    private int leftHash;
+
     // Start is called before the first frame update
     void Start()
     {
         animatorGO = GetComponent<Animator>();
+
+        rightHash = Animator.StringToHash("rightFoot");
+        leftHash =  Animator.StringToHash("leftFoot");
     }
 
     //calls each time when animation is updated
@@ -28,7 +38,23 @@ public class IKAnimation : MonoBehaviour
     {
         if (ikActive)
         {
-            if(handObj)
+            weightLeftFoot = animatorGO.GetFloat(leftHash);
+            weightRightFoot = animatorGO.GetFloat(rightHash);
+
+            animatorGO.SetIKPositionWeight(AvatarIKGoal.LeftFoot, weightLeftFoot);
+            animatorGO.SetIKRotationWeight(AvatarIKGoal.LeftFoot, weightLeftFoot);
+            animatorGO.SetIKPositionWeight(AvatarIKGoal.RightFoot, weightRightFoot);
+            animatorGO.SetIKRotationWeight(AvatarIKGoal.RightFoot, weightRightFoot);
+            
+            RaycastHit hit;
+
+            if (Physics.Raycast(rightFoot.position, Vector3.down, out hit, 3f))
+                rightfootPos = hit.point;
+
+            //когда мы попадаем в какую-то поверхность, мы получаем hitPoint и к этой поверхности стемится нога
+            animatorGO.SetIKPosition(AvatarIKGoal.RightFoot, rightfootPos);
+
+            if (handObj)
             {
                 //вначале надо установить вес. На сколько сильно изменение позиции кодом в скрипте влияет на 
                 //текущую фазу анимации. Если вес равен 1, то рука или нога (т.е., то, что мы изменем)
