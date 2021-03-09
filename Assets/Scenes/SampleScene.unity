@@ -479,7 +479,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.47
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -488,10 +488,10 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.866
     m_Bias: 0.05
     m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_NearPlane: 0.72
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -557,7 +557,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sky: {r: 0.50462794, g: 0.60130787, b: 0.7924528, a: 0}
   Equator: {r: 0, g: 0.79215693, b: 1, a: 0}
-  Ground: {r: 0.07450981, g: 1, b: 0, a: 0}
+  Ground: {r: 0.28235295, g: 0.3137255, b: 0.050980397, a: 0}
   SunColor: {r: 0.89019614, g: 0.96470594, b: 0.227451, a: 0}
   RotateSpeed: 0.08
 --- !u!1001 &725335982
@@ -1425,8 +1425,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1649389095}
-  m_LocalRotation: {x: 0.084967524, y: 0.73093987, z: 0.09258901, w: -0.6707717}
-  m_LocalPosition: {x: 509.8826, y: 0.5611725, z: 59.240986}
+  m_LocalRotation: {x: 0, y: 0.5365633, z: 0, w: -0.8438601}
+  m_LocalPosition: {x: 506.6, y: 2.210003, z: 60.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
